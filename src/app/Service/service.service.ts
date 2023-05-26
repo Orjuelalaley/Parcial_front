@@ -8,7 +8,7 @@ import { Libro } from '../Modelo/Libro';
 export class ServiceService {
 
   constructor(private http:HttpClient) { }
-  Url='http://localhost:8080/libros';
+  Url='http://localhost:8080/api/v1/libro/all';
 
   getLibros(){
     return this.http.get<Libro[]>(this.Url);

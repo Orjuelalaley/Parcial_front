@@ -12,8 +12,17 @@ import { ServiceService } from 'src/app/Service/service.service';
 })
 export class AgregarComponent implements OnInit{
 
+  libro: any = {};
+
+
+  constructor(private router:Router, private service:ServiceService) { }
 
   Guardar() {
+    this.service.PostLibro(this.libro)
+      .subscribe(data => {
+        alert("Se agrego con Exito...!!!");
+        this.router.navigate(["listar"]);
+      })
 
   }
 

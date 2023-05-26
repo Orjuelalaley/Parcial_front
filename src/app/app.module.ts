@@ -6,13 +6,11 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LibroComponent } from './libro/libro.component';
 import { ListarComponent } from './libro/listar/listar.component';
 import { AgregarComponent } from './Libro/agregar/agregar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LibroComponent,
     ListarComponent,
     AgregarComponent
   ],
