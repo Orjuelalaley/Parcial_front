@@ -5,7 +5,7 @@ import { AgregarComponent } from './Libro/agregar/agregar.component';
 
 const routes: Routes = [
   {path:'listar',component:ListarComponent},
-  {path:'add',component:AgregarComponent},
+  {path:'agregar',component:AgregarComponent},
 ];
 
 @NgModule({

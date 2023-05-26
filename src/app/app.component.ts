@@ -16,6 +16,6 @@ export class AppComponent {
   }
 
   Nuevo(){
-    this.router.navigate(["add"]);
+    this.router.navigate(["agregar"]);
   }
 }

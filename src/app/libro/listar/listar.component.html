@@ -1,1 +1,29 @@
-<p>listar works!</p>
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Libros</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>título</th>
+          <th>referencia</th>
+          <th>autor</th>
+          <th>precio</th>
+          <th>ubicación</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let libro of libros" class="text-center">
+          <td>{{libro.titulo}}</td>
+          <td>{{libro.referencia}}</td>
+          <td>{{libro.autor}}</td>
+          <td>{{libro.precio}}</td>
+          <td>{{libro.ubicacion}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
